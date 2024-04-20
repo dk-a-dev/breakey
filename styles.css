@@ -56,6 +56,37 @@ div#game
   line-height: 35px;
   height: 105px;
   overflow: hidden;
+  position: relative;
+}
+div #game:focus
+{
+  outline: 0;
+}
+
+#words
+{
+  filter: blur(5px);
+  color: var(--textSecondary);
+}
+
+#game:focus #words
+{
+  filter: blur(0);
+}
+
+#focus-error
+{
+  position: absolute;
+  inset: 0;
+  text-align: center;
+  padding-top: 35px;
+  color: var(--primaryColor);
+}
+
+#game:focus #focus-error
+{
+  
+  display: none;
 }
 
 div.word
@@ -63,4 +94,46 @@ div.word
   display: inline-block;
   font-family: 'Roboto Mono', monospace;
   margin: 0 5px;
+}
+
+#title
+{
+  cursor: pointer;
+}
+
+.letter.correct
+{
+  color: #f55;
+}
+
+@keyframes blink 
+{
+  0%
+  {
+    opacity: 1;
+  }
+  50%
+  {
+    opacity: 0;
+  }
+  100%
+  {
+    opacity: 1;
+  }
+}
+#cursor
+{
+  display: none;
+  width: 2px;
+  height: 1.6rem;
+  background: var(--primaryColor);
+  position: fixed;
+  top: 198px;
+  left: 75.5px;
+  animation: blink 1s infinite;
+}
+
+#game:focus #cursor
+{
+  display: block;
 }
