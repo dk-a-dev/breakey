@@ -11,6 +11,23 @@
   <title>Breakey</title>
 </head>
 <body>
+  <form class="color-picker">
+    <fieldset>
+      <legend class="visually-hidden">Pick a Color Scheme</legend>
+      <label class="visually-hidden" for="default">Default</label>
+      <input type="radio" name="theme" id="default" checked>
+      <label class="visually-hidden" for="purpleish">Purpleish</label>
+      <input type="radio" name="theme" id="purpleish">
+      <label class="visually-hidden" for="mint">Mint</label>
+      <input type="radio" name="theme" id="mint">
+      <label class="visually-hidden" for="miami">Miami</label>
+      <input type="radio" name="theme" id="miami">
+      <label class="visually-hidden" for="terra">Terra</label>
+      <input type="radio" name="theme" id="terra">
+      <label class="visually-hidden" for="dragon">Red Dragon</label>
+      <input type="radio" name="theme" id="dragon">
+    </fieldset>
+  </form>
   <main>
     <h1 id="title">
       <span  onclick="newGame();">
@@ -31,5 +48,6 @@
     </div>
   </main>
   <script src="typing.js"></script>
+  <script src="theme.js"></script>
 </body>
 </html>
