@@ -1,0 +1,31 @@
+{
+  "name": "breakey-backend",
+  "version": "1.0.0",
+  "description": "Backend for simple version of monkeytype website i.e breakey",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dk-a-dev/breakey.git"
+  },
+  "author": "Dev Keshwani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dk-a-dev/breakey/issues"
+  },
+  "homepage": "https://github.com/dk-a-dev/breakey#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.3.2",
+    "validator": "^13.11.0"
+  }
+}
