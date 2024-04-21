@@ -2,7 +2,7 @@
 <img src="images/android-chrome-512x512.png">
 Breakey is a simple yet effective typing speed test website where users can gauge their typing speed by typing a given set of words within a 30-second timeframe. With a sleek design and customizable themes, Breakey offers an engaging platform for users to improve their typing skills.
 
-### Features
+### Features Frontend
 
 - [x] **Typing Speed Test**: Measure your typing speed by typing a set of words within 30 seconds. Breakey calculates your typing speed in words per minute (WPM) based on the number of words you type accurately within the given timeframe.
 
