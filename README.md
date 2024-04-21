@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+##  Breakey!
+<img src="">
+Breakey is a simple yet effective typing speed test website where users can gauge their typing speed by typing a given set of words within a 30-second timeframe. With a sleek design and customizable themes, Breakey offers an engaging platform for users to improve their typing skills.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Features
 
-## Available Scripts
+- [x] **Typing Speed Test**: Measure your typing speed by typing a set of words within 30 seconds. Breakey calculates your typing speed in words per minute (WPM) based on the number of words you type accurately within the given timeframe.
 
-In the project directory, you can run:
+- [x] **Customizable Themes**: Personalize your typing experience by choosing from a variety of themes. Whether you prefer a light or dark interface, Breakey has options to suit your preferences.
 
-### `npm start`
+- [ ] **Future Plans**: Breakey is continuously evolving. Our future plans include:
+  - [ ] **Authentication**: Allow users to create accounts and track their typing progress over time.
+  - [ ] **Additional Typing Modes**: Introduce new typing modes, such as completing words or sentences, with various timer modes for diverse challenges.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Breakey is built using the following technologies:
+- **JavaScript**: For dynamic interactivity and functionality.
+- **HTML**: For structuring the content and layout of the website.
+- **CSS**: For styling and enhancing the visual appeal of the website.
 
-### `npm test`
+### How to Use
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Visit the Breakey website.
+2. Start the typing speed test by typing the given set of words within the 30-second timeframe.
+3. After 30 seconds, Breakey will display your typing speed in WPM (Words Per Minute).
+4. Explore different themes by selecting your preferred option from the settings menu.
+5. Click new game button to instantly start a new game
+---
