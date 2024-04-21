@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-:root {
-  --bgColor: #333;
-  --textPrimary: #fff;
-  --textSecondary: #666;
-  --primaryColor: #fd4;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap');
+:root
+{
+    --bgColor: #333;
+    --textPrimary: #fff;
+    --textSecondary: #666;
+    --primaryColor: #fd4;
 }
 
 body {
@@ -15,113 +15,131 @@ body {
   font-size: 1.4rem;
 }
 
-main {
-  width: 600px;
-  margin: 50px auto;
+main
+{
+    width: 600px;
+    margin: 50px auto;
 }
-
-h1 {
-  color: var(--primaryColor);
+h1
+{
+    color: var(--primaryColor);
 }
-
-h1 svg {
-  width: 40px;
-  fill: var(--primaryColor);
+h1 svg
+{
+    width: 40px;
+    fill: var(--primaryColor);
 }
-
-#header {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 20px 6px 30px;
+#header
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px 6px 30px;
 }
-
-#buttons {
-  text-align: right;
+#buttons
+{
+    text-align: right;
 }
-
-#info {
-  color: var(--primaryColor);
+#info
+{
+    color: var(--primaryColor);
 }
-
-button {
-  background-color: rgba(255, 255, 255, .2);
-  border: 0;
-  color: rgba(255, 255, 255, .5);
-  padding: 5px 20px;
-  border-radius: 5px;
-  cursor: pointer;
+button
+{
+    background: rgba(255,255,255,.2);
+    border:0;
+    color: rgba(255,255,255,.5);
+    padding: 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
 }
-
-div#game {
-  line-height: 35px;
-  height: 105px;
-  overflow: hidden;
-  position: relative;
+div#game
+{
+    line-height:35px;
+    height:105px;
+    overflow: hidden;
+    position: relative;
 }
-
-div #game:focus {
-  outline: 0;
+div#game:focus
+{
+    outline:0;
 }
-
-#words {
-  filter: blur(5px);
-  color: var(--textSecondary);
+#words
+{
+    filter: blur(5px);
+    color: var(--textSecondary);
 }
-
-#game:focus #words {
-  filter: blur(0);
+#game:focus #words
+{
+    filter: blur(0);
 }
-
-#focus-error {
-  position: absolute;
-  inset: 0;
-  text-align: center;
-  padding-top: 35px;
-  color: var(--primaryColor);
+#focus-error 
+{
+    position: absolute;
+    inset: 0;
+    text-align: center;
+    padding-top: 35px;
 }
-
-#game:focus #focus-error {
-
-  display: none;
+#game:focus #focus-error
+{
+    display:none;
 }
-
-div.word {
-  display: inline-block;
-  font-family: 'Roboto Mono', monospace;
-  margin: 0 5px;
+div.word
+{
+    display: inline-block;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0 5px;
 }
-
-#title {
-  cursor: pointer;
+.letter.correct
+{
+    color: #fff;
 }
-
-.letter.correct {
-  color: #f55;
+.letter.incorrect
+{
+    color: #f55;
 }
-
-@keyframes blink {
-  0% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
+@keyframes blink
+{
+    0%
+    {
+        opacity: 1;
+    }
+    50%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
 }
-
-#cursor {
+#cursor 
+{
   display: none;
   width: 2px;
   height: 1.6rem;
   background: var(--primaryColor);
   position: fixed;
-  top: 198px;
-  left: 75.5px;
+  top: 28%; 
+  transform: translateY(-50%);
+  z-index: 1;
   animation: blink 1s infinite;
+}
+#game:focus #cursor
+{
+    display: block;
+}
+#game.over #words
+{
+    opacity: .5;
+    filter: blur(0px);
+}
+#game.over:focus #cursor
+{
+    display:none;
+}
+#game.over #focus-error 
+{
+    display: none;
 }
 
 #game:focus #cursor {
