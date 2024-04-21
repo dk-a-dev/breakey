@@ -1,48 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-:root
-{
+
+:root {
   --bgColor: #333;
   --textPrimary: #fff;
   --textSecondary: #666;
   --primaryColor: #fd4;
 }
-body
-{
+
+body {
   font-family: 'Roboto', sans-serif;
   background-color: var(--bgColor);
   color: var(--textPrimary);
   font-size: 1.4rem;
 }
-main
-{
+
+main {
   width: 600px;
   margin: 50px auto;
 }
-h1
-{
+
+h1 {
   color: var(--primaryColor);
 }
-h1 svg
-{
+
+h1 svg {
   width: 40px;
   fill: var(--primaryColor);
 }
-#header
-{
+
+#header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 20px 6px 30px;
 }
-#buttons
-{
+
+#buttons {
   text-align: right;
 }
-#info
-{
+
+#info {
   color: var(--primaryColor);
 }
-button
-{
+
+button {
   background-color: rgba(255, 255, 255, .2);
   border: 0;
   color: rgba(255, 255, 255, .5);
@@ -51,31 +51,27 @@ button
   cursor: pointer;
 }
 
-div#game
-{
+div#game {
   line-height: 35px;
   height: 105px;
   overflow: hidden;
   position: relative;
 }
-div #game:focus
-{
+
+div #game:focus {
   outline: 0;
 }
 
-#words
-{
+#words {
   filter: blur(5px);
   color: var(--textSecondary);
 }
 
-#game:focus #words
-{
+#game:focus #words {
   filter: blur(0);
 }
 
-#focus-error
-{
+#focus-error {
   position: absolute;
   inset: 0;
   text-align: center;
@@ -83,46 +79,40 @@ div #game:focus
   color: var(--primaryColor);
 }
 
-#game:focus #focus-error
-{
-  
+#game:focus #focus-error {
+
   display: none;
 }
 
-div.word
-{
+div.word {
   display: inline-block;
   font-family: 'Roboto Mono', monospace;
   margin: 0 5px;
 }
 
-#title
-{
+#title {
   cursor: pointer;
 }
 
-.letter.correct
-{
+.letter.correct {
   color: #f55;
 }
 
-@keyframes blink 
-{
-  0%
-  {
+@keyframes blink {
+  0% {
     opacity: 1;
   }
-  50%
-  {
+
+  50% {
     opacity: 0;
   }
-  100%
-  {
+
+  100% {
     opacity: 1;
   }
 }
-#cursor
-{
+
+#cursor {
   display: none;
   width: 2px;
   height: 1.6rem;
@@ -133,7 +123,6 @@ div.word
   animation: blink 1s infinite;
 }
 
-#game:focus #cursor
-{
+#game:focus #cursor {
   display: block;
 }

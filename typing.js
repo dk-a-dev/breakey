@@ -1,24 +1,20 @@
 const words = "They had made it to Las Vegas, wide-eyed and with so much hope and energy. They had planned the trip for more than a year and both were so excited they could barely control themselves. They still hadn't realized that Las Vegas promised a place where dreams come true, it was actually the place where dreams came to die.".split(' ');
 const wordsCount = words.length;
 
-function addClass(el,name)
-{
-  el.className +=' '+name;
+function addClass(el, name) {
+  el.className += ' ' + name;
 }
-function removeClass(el,name)
-{
-  el.className =el.className.replace(name,"");
+function removeClass(el, name) {
+  el.className = el.className.replace(name, "");
 }
 
-function randomWord()
-{
-  const randomIndex = Math.ceil(Math.random()*wordsCount);
+function randomWord() {
+  const randomIndex = Math.ceil(Math.random() * wordsCount);
 
-    return words[randomIndex-1];
+  return words[randomIndex - 1];
 }
 
-function formatWord(word)
-{
+function formatWord(word) {
   return `<div class="word">
             <span class="letter">
               ${word.split('').join('</span><span class="letter">')}
@@ -26,32 +22,27 @@ function formatWord(word)
           </div>`;
 }
 
-function newGame()
-{
+function newGame() {
   document.getElementById('words').innerHTML = '';
-  for(let i =0;i<200;i++)
-  {
+  for (let i = 0; i < 200; i++) {
     document.getElementById('words').innerHTML += formatWord(randomWord());
   }
-  addClass(document.querySelector('.word'),'current');
-  addClass(document.querySelector('.letter'),'current');
+  addClass(document.querySelector('.word'), 'current');
+  addClass(document.querySelector('.letter'), 'current');
 }
 
-document.getElementById('game').addEventListener('keydown', ev => 
-{
+document.getElementById('game').addEventListener('keydown', ev => {
   const key = ev.key;
   const currentLetter = document.querySelector('.letter.current');
   const expected = currentLetter.innerHTML;
-  const isLetter = key.length===1 && key !== ' ';
+  const isLetter = key.length === 1 && key !== ' ';
 
-  if(isLetter)
-  {
-    if(currentLetter)
-    {
+  if (isLetter) {
+    if (currentLetter) {
       addClass(currentLetter, key === expected ? 'correct' : 'incorrect');
     }
   }
-  console.log({key,expected});
+  console.log({ key, expected });
 
 })
 
