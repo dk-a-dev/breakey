@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap');
+
+:root {
+    --bgColor: #333;
+    --textPrimary: #fff;
+    --textSecondary: #666;
+    --primaryColor: #fd4;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bgColor);
+    color: var(--textPrimary);
+    font-size: 1.4rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#register,#login {
+    /* make it center */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    background: var(--textPrimary);
+    color: var(--bgColor);
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+h2 {
+    color: var(--primaryColor);
+}
+
+input {
+    display: block;
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+}
+
+button {
+    background: var(--primaryColor);
+    border: 0;
+    color: var(--bgColor);
+    padding: 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Theming */
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.color-picker>fieldset {
+    border: 0;
+    display: flex;
+    gap: 1rem;
+    width: fit-content;
+    background: var(--textPrimary);
+    padding: 1rem 2rem;
+    margin-inline: auto;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.color-picker input[type="radio"] {
+    appearance: none;
+    width: 1rem;
+    height: 1rem;
+    outline: 3px solid var(--radio-color, currentColor);
+    outline-offset: 2px;
+    border-radius: 50%;
+}
+
+.color-picker input[type="radio"]:checked {
+    background-color: var(--radio-color);
+}
+
+.color-picker input[type="radio"]#default {
+    --radio-color: #fd4
+}
+
+.color-picker input[type="radio"]#purpleish {
+    --radio-color: purple;
+}
+
+.color-picker input[type="radio"]#mint {
+    --radio-color: #417DB0;
+}
+
+.color-picker input[type="radio"]#miami {
+    --radio-color: #ff00a9;
+}
+
+.color-picker input[type="radio"]#terra {
+    --radio-color: #419619;
+}
+
+.color-picker input[type="radio"]#dragon {
+    --radio-color: #6e2020;
+}
+
+:root:has(#default:checked) {
+    --bgColor: #333;
+    --textPrimary: #fff;
+    --textSecondary: #666;
+    --primaryColor: #fd4;
+}
+
+:root:has(#purpleish:checked) {
+    --bgColor: #49243E;
+    --textPrimary: #704264;
+    --textSecondary: #BB8493;
+    --primaryColor: #DBAFA0;
+}
+
+:root:has(#mint:checked) {
+    --bgColor: #04364A;
+    --textPrimary: #176B87;
+    --textSecondary: #64CCC5;
+    --primaryColor: #DAFFFB;
+}
+
+:root:has(#miami:checked) {
+    --bgColor: #f890e7;
+    --textPrimary: #0bd3d3;
+    --textSecondary: #717378;
+    --primaryColor: #fff;
+}
+
+:root:has(#terra:checked) {
+    --bgColor: #114232;
+    --textPrimary: #fff;
+    --textSecondary: #416D19;
+    --primaryColor: #87A922;
+}
+
+:root:has(#dragon:checked) {
+    --bgColor: #6e2020;
+    --textPrimary: #b84336;
+    --textSecondary: #fd4;
+    --primaryColor: #fd4;
+}
