@@ -11,6 +11,7 @@ Breakey is a simple yet effective typing speed test website where users can gaug
 - [ ] **Future Plans**: Breakey is continuously evolving. Our future plans include:
   - [ ] **Authentication**: Allow users to create accounts and track their typing progress over time.
   - [ ] **Additional Typing Modes**: Introduce new typing modes, such as completing words or sentences, with various timer modes for diverse challenges.
+  - [ ] **Leaderboard**: Create a global leaderboard as a gamification feature.
 
 ### Technologies Used
 
