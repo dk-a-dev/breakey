@@ -62,7 +62,7 @@ function gameOver()
   document.getElementById('info').innerHTML = `WPM: ${result}`;
 }
 
-document.getElementById('game').addEventListener('keyup', ev => 
+document.getElementById('game').addEventListener('keydown', ev => 
 {
   const key = ev.key;
   const currentWord = document.querySelector('.word.current');
