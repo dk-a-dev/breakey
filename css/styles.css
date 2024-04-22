@@ -45,9 +45,9 @@ h1 svg {
 }
 
 button {
-  background: rgba(255, 255, 255, .2);
+  background: var(--primaryColor);
   border: 0;
-  color: rgba(255, 255, 255, .5);
+  color: var(--bgColor);
   padding: 5px 20px;
   border-radius: 5px;
   cursor: pointer;
@@ -156,6 +156,13 @@ div.word {
   padding: 8px;
 }
 
+.btn {
+  background: var(--primaryColor);
+  color: var(--bgColor);
+  padding: 5px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
 
 /* Theming */
